@@ -1,0 +1,39 @@
+<h1>Vídeos</h1>
+
+<a href="/videos/add">
+Cadastrar vídeo
+</a>
+
+{{#each videos}}
+
+<div>
+
+    <h3>{{titulo}}</h3>
+
+    <p>{{descricao}}</p>
+
+    <iframe
+        width="300"
+        height="200"
+        src="{{url}}">
+    </iframe>
+
+    <br>
+
+    <a href="/videos/edit/{{id}}">
+        Editar
+    </a>
+
+    <form
+      action="/videos/delete/{{id}}"
+      method="POST">
+
+      <button>
+        Excluir
+      </button>
+
+    </form>
+
+</div>
+
+{{/each}}
