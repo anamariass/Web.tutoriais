@@ -1,1 +1,1 @@
-Questões do tópico "Exercícios com Express, Handlebars e Sequelize"
+Resolução Completa dos Exercícios com Express, Handlebars e Sequelize
